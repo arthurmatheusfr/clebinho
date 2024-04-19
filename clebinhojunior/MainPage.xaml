@@ -26,11 +26,11 @@
                <Frame x:Name="FrameBarra"
            BackgroundColor="#1E90FF"
            BorderColor="LemonChiffon"
-           Grid.Row="2"
-           Grid.RowSpan="2"
+           Grid.Row="1"
+           CornerRadius="20"
            Grid.Column="0"
            Margin="5"
-           HeightRequest="160">
+           Grid.RowSpan="2">
     <Grid>
     <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -46,11 +46,82 @@
        <Frame x:Name="FrameBarra2"
            BackgroundColor="#1E90FF"
            BorderColor="LemonChiffon"
+           Grid.Row="1"
+           CornerRadius="25"
+           Grid.Column="1">
+    <Grid>
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        </Grid>
+       </Frame>
+       <Frame x:Name="FrameBarra3"
+           BackgroundColor="#1E90FF"
+           BorderColor="LemonChiffon"
+           Grid.Row="1"
+           CornerRadius="25"
+           Grid.Column="2">
+    <Grid>
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        </Grid>
+       </Frame>
+ <Frame x:Name="FrameBarra4"
+           BackgroundColor="#1E90FF"
+           BorderColor="LemonChiffon"
            Grid.Row="2"
-         
-           Grid.Column="1"
-           Margin="5"
-           HeightRequest="160">
+           CornerRadius="25"
+           Grid.Column="1">
+    <Grid>
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        </Grid>
+       </Frame>
+       <Frame x:Name="FrameBarra5"
+           BackgroundColor="#1E90FF"
+           BorderColor="LemonChiffon"
+           Grid.Row="2"
+           CornerRadius="25"
+           Grid.Column="2">
+    <Grid>
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        </Grid>
+       </Frame>
+       <Frame x:Name="FrameBarra6"
+           BackgroundColor="#1E90FF"
+           BorderColor="LemonChiffon"
+           Grid.Row="4"
+           CornerRadius="25"
+           Grid.Column="0"
+           Grid.ColumnSpan="3">
     <Grid>
     <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
