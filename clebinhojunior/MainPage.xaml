@@ -41,6 +41,11 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <label x:Name="temperatura"
+         TextColor="Black"
+         >
+        
+        
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra2"
