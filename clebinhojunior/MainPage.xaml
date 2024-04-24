@@ -41,9 +41,11 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <label x:Name="temperatura"
+        <label x:Name="temperaturatexto"
          TextColor="Black"
-         >
+         FontSize="30"
+         HorizontalTextAlignment="Center"
+         Grid.Row="0"/>
         
         
         </Grid>
