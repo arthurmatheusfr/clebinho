@@ -23,7 +23,7 @@
                VerticalOptions="Fill"
                Grid.RowSpan="5"
                Grid.ColumnSpan="3"/>
-               <Frame x:Name="FrameBarra"
+               <Frame x:Name="FrameBarraTemperatura"
            BackgroundColor="#1E90FF"
            BorderColor="LemonChiffon"
            Grid.Row="1"
@@ -43,12 +43,35 @@
         </Grid.ColumnDefinitions>
         <label x:Name="temperaturatexto"
          TextColor="Black"
-         FontSize="30"
+         FontSize="40"
          HorizontalTextAlignment="Center"
          Grid.Row="0"/>
+
+         <Label Text="°C"
+         TextColor="Black"
+         FontSize="20"
+         VerticalOptions="End"
+         HorizontalOptions="Start"
+         Grid.Column="1"
+         Grid.ColumnSpan="2"/>
+
+          <Label x:Name="Ceutexto"
+         TextColor="Black"
+         FontSize="14"
+         VerticalOptions="Center"
+         HorizontalOptions="Start"
+         Grid.Row="1"
+         Grid.ColumnSpan="2"/>
+          <Label x:Name="Cidadetexto"
+         TextColor="Black"
+         FontSize="14"
+         VerticalOptions="End"
+         HorizontalOptions="Start"
+         Grid.Row="2"
+         Grid.ColumnSpan="2"/>
         </Grid>
        </Frame>
-       <Frame x:Name="FrameBarra2"
+       <Frame x:Name="FrameBarraChuva"
            BackgroundColor="#1E90FF"
            BorderColor="LemonChiffon"
            Grid.Row="1"
@@ -64,6 +87,16 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+          <Label Text="Chuva"
+          TextColor="White"
+          FontSize="11"
+          VerticalOptions="Center"
+          Grid.ColumnSpan="2"/>
+          <Label Text="Chuva:"
+            TextColor="White"
+            FontSize="8"
+            VerticalOptions="End"
+            HorizontalOptions="Start"/>
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra3"
