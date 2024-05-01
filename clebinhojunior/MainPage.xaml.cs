@@ -49,25 +49,25 @@ const string url ="https://api.hgbrasil.com/weather?woeid=455927&key=6de38f65";
 					labelFaselua.Text = "Cheia";
 
 				else if (resposta.results.moon_phase=="new")
-					labelMoonFaselua.Text = "Nova";
+					labelFaselua.Text = "Nova";
 
 				else if (resposta.results.moon_phase=="waxing_crescent")
-					labelMoonFaselua.Text = "Lua Crescente";
+					labelFaselua.Text = "Lua Crescente";
 
 				else if (resposta.results.moon_phase=="first_quarter")
-					labelMoonFaselua.Text = "Quarto Crescente";
+					labelFaselua.Text = "Quarto Crescente";
 
 				else if (resposta.results.moon_phase=="last_quarter")
-					labelMoonFaselua.Text = "Quarto Minguante";
+					labelFaselua.Text = "Quarto Minguante";
 				
 				else if (resposta.results.moon_phase=="waxing_gibbous")
-					labelMoonFaselua.Text = "Gibosa Crescente";
+					labelFaselua.Text = "Gibosa Crescente";
 	
 				else if (resposta.results.moon_phase=="waxing_crescent")
-					labelMoonFaselua.Text = "Gibosa Minguante";
+					labelFaselua.Text = "Gibosa Minguante";
 		
 				else if (resposta.results.moon_phase=="waning_crescent")
-					labelMoonFaselua.Text = "Lua Minguante";
+					labelFaselua.Text = "Lua Minguante";
 			
 
 
