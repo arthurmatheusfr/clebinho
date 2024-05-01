@@ -2,6 +2,6 @@ namespace clebinhojunior;
 public class Resposta
 {
 
-public resultados results {get; set;}
+public Results results {get; set;}
 
 }

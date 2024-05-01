@@ -17,20 +17,21 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Source="dianormal.jfif"
+       <Image x:Name="FundoImagem"
                Aspect="AspectFill"
-               HorizontalOptions="Fill"
-               VerticalOptions="Fill"
-               Grid.RowSpan="5"
+               Grid.RowSpan="4"
                Grid.ColumnSpan="3"/>
+               
+               
+               
                <Frame x:Name="FrameBarraTemperatura"
-           BackgroundColor="#1E90FF"
-           BorderColor="LemonChiffon"
-           Grid.Row="1"
-           CornerRadius="20"
-           Grid.Column="0"
-           Margin="5"
-           Grid.RowSpan="2">
+                BackgroundColor="#1E90FF"
+                BorderColor="LemonChiffon"
+                Grid.Row="1"
+                CornerRadius="20"
+                Grid.Column="0"
+                Margin="5"
+                Grid.RowSpan="2">
     <Grid>
     <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -41,7 +42,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <label x:Name="temperaturatexto"
+        <label x:Name="labeltemperatura"
          TextColor="Black"
          FontSize="40"
          HorizontalTextAlignment="Center"
@@ -55,14 +56,14 @@
          Grid.Column="1"
          Grid.ColumnSpan="2"/>
 
-          <Label x:Name="Ceutexto"
+          <Label x:Name="labelCeu"
          TextColor="Black"
          FontSize="14"
          VerticalOptions="Center"
          HorizontalOptions="Start"
          Grid.Row="1"
          Grid.ColumnSpan="2"/>
-          <Label x:Name="Cidadetexto"
+          <Label x:Name="labelCidade"
          TextColor="Black"
          FontSize="14"
          VerticalOptions="End"
@@ -71,7 +72,7 @@
          Grid.ColumnSpan="2"/>
         </Grid>
        </Frame>
-       <Frame x:Name="FrameBarraChuva"
+       <Frame x:Name="FrameBarra1"
            BackgroundColor="#1E90FF"
            BorderColor="LemonChiffon"
            Grid.Row="1"
@@ -88,15 +89,41 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
           <Label Text="Chuva"
-          TextColor="White"
+          TextColor="Black"
           FontSize="11"
           VerticalOptions="Center"
           Grid.ColumnSpan="2"/>
           <Label Text="Chuva:"
-            TextColor="White"
+            TextColor="Black"
             FontSize="8"
             VerticalOptions="End"
             HorizontalOptions="Start"/>
+            <Label x:Name="labelChuva"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"/>
+              
+            <Label Text="Humidade:"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Margin="10,0,0,0"/>
+
+            <Label x:Name="labelHumidade"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Grid.Row="2"/>
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra3"
@@ -115,6 +142,50 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+         <Label Text="Sol"
+                TextColor="Black"
+                FontSize="11"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"/>
+
+        <Label Text="Nascer:"
+                TextColor="Black"
+                FontSize="10"
+                VerticalOptions="End"
+                HorizontalOptions="Start"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Margin="10"/>
+
+        <Label x:Name="labelAmanhecer"
+                TextColor="Black"
+                FontSize="10"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="1"/>
+    
+        <Label Text="Pôr:"
+                TextColor="Black"
+                FontSize="10"
+                VerticalOptions="End"
+                HorizontalOptions="Start"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Margin="10"/>
+
+        <Label x:Name="labelAnoitecer"
+                TextColor="Black"
+                FontSize="10"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"/>
         </Grid>
        </Frame>
  <Frame x:Name="FrameBarra4"
@@ -133,6 +204,50 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <Label Text="Vento"
+            TextColor="Black"
+            FontSize="11"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"/>
+
+        <Label Text="Força:"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Grid.ColumnSpan="3"
+            Grid.Row="1"
+            Margin="10,0,0,0"/>
+
+        <Label x:Name="labelForcavent"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"/>
+              
+        <Label Text="Direção:"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            Margin="10"/>
+
+        <Label x:Name="labelDirecaovent"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Grid.Row="2"/>
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra5"
@@ -151,6 +266,32 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+         <Label Text="Lua"
+            TextColor="Black"
+            FontSize="11"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"/>
+
+        <Label Text="Fase:"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Grid.ColumnSpan="3"
+            Grid.Row="1"
+            Margin="10"/>
+
+        <Label x:Name="labelFaselua"
+            TextColor="Black"
+            FontSize="10"
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="1"/>
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra6"
