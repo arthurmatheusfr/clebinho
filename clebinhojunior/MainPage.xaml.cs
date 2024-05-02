@@ -29,7 +29,7 @@ const string url ="https://api.hgbrasil.com/weather?woeid=455927&key=6de38f65";
 			}
 			catch(Exception e)
 			{
-             System.Diagnostics.Debug.WriteLine(e);
+
 			}
 
 		}

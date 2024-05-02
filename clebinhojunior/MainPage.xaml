@@ -42,7 +42,8 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <label x:Name="labeltemperatura"
+        
+        <Label x:Name="labeltemperatura"
          TextColor="Black"
          FontSize="40"
          HorizontalTextAlignment="Center"
@@ -63,6 +64,7 @@
          HorizontalOptions="Start"
          Grid.Row="1"
          Grid.ColumnSpan="2"/>
+          
           <Label x:Name="labelCidade"
          TextColor="Black"
          FontSize="14"
@@ -70,6 +72,7 @@
          HorizontalOptions="Start"
          Grid.Row="2"
          Grid.ColumnSpan="2"/>
+        
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra1"
@@ -88,16 +91,19 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+          
           <Label Text="Chuva"
           TextColor="Black"
           FontSize="11"
           VerticalOptions="Center"
           Grid.ColumnSpan="2"/>
+          
           <Label Text="Chuva:"
             TextColor="Black"
             FontSize="8"
             VerticalOptions="End"
             HorizontalOptions="Start"/>
+            
             <Label x:Name="labelChuva"
             TextColor="Black"
             FontSize="10"
@@ -124,6 +130,7 @@
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Grid.Row="2"/>
+        
         </Grid>
        </Frame>
        <Frame x:Name="FrameBarra3"
